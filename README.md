@@ -14,7 +14,7 @@ This guide details the steps necessary to integrate the **Meta XR All-in-One SDK
 
     * Note:, later for Quest devices - under **Android** tab, check the **Oculus** box.
 
-## Step 2: The Player Rig (Camera and Hands)
+## Step 2: Building Blocks
 
 1.  **Remove Default Camera:** Delete the scene's default `Main Camera`.
 2.  Select **Meta**, **About Meta SDK**, and then **Building Blocks**
