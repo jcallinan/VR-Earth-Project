@@ -7,18 +7,23 @@ This guide details the steps necessary to integrate the **Meta XR All-in-One SDK
 1.  **Unity Editor:** Create a new **3D (URP)** or **3D Core** project.
 2.  **Install SDK:** Download the **Meta XR All-in-One SDK** from the Unity Asset Store and **Import** it via the Package Manager (My Assets).
 3.  **Configure XR:**
-    * Go to **Edit > Project Settings > XR Plug-in Management**.
-    * Under the **Android** tab (for Quest devices), check the **Oculus** box.
+    * Go to **Edit > Project Settings > Meta XR**. Under the checklist, pick 'Apply All'.
+    * Go to **Edit > Project Settings > XR Plug-in Management**. Select 'Install XR Plugin Management' first if that is an option. Then, pick '**OpenXR**'
+    
     * Follow any setup prompts from the Meta configuration tools.
+
+    * Note:, later for Quest devices - under **Android** tab, check the **Oculus** box.
 
 ## Step 2: The Player Rig (Camera and Hands)
 
 1.  **Remove Default Camera:** Delete the scene's default `Main Camera`.
-2.  **Add OVRCameraRig:** In the Unity menu, go to **Oculus > Tools > OVRCameraRig** (or use the provided `OVRPlayerController` prefab). This GameObject serves as the player's head and hand tracking anchor.
+2.  Select **Meta**, **About Meta SDK**, and then **Building Blocks**
 
 ## Step 3: Enabling VR Interaction
 
-The core "grab" mechanic requires two key components from the Meta XR SDK:
+1. Select **Camera Rig**, drag and drop into your scene.
+2. Add **Interactions Rig** and **Grab Interaction**
+
 
 ### A. Make the Globe Grabbable (`OVRGrabbable`)
 
