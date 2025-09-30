@@ -25,19 +25,6 @@ This guide details the steps necessary to integrate the **Meta XR All-in-One SDK
 2. Add **Interactions Rig** and **Grab Interaction**
 
 
-### A. Make the Globe Grabbable (`OVRGrabbable`)
-
-1.  Select the **`Globe`** GameObject.
-2.  Ensure it has a **Collider** and **Rigidbody**.
-3.  Add Component > Add the **`OVRGrabbable`** script. This component tags the object as being available for VR interaction.
-
-### B. Enable Hands to Grab (`OVRGrabber`)
-
-1.  Locate the **`LeftHandAnchor`** and **`RightHandAnchor`** GameObjects inside the `OVRCameraRig/TrackingSpace`.
-2.  On **each Hand Anchor**, add Component > Add the **`OVRGrabber`** script. This script automatically detects the controller grip input and checks for any colliders with an `OVRGrabbable` component, initiating the grab interaction when the buttons are pressed.
-
-This setup enables the player to physically grab, rotate, and manipulate the physics-enabled globe using the VR controllers, completing the VR interaction foundation.
-
 # 🌍 MetaGlobe VR: Core Project Report
 
 This report documents the scene structure, use of GameObjects, and fundamental C# scripting concepts.
